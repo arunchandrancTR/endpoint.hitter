@@ -16,3 +16,7 @@ steps:
   inputs:
     ProjectDirectory: web
     Arguments: 'ng build --prod'
+- task: Docker@2
+  inputs:
+    command: 'build'
+    Dockerfile: './docker/Dockerfile'
