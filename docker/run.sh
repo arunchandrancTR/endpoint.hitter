@@ -1,1 +1,1 @@
-docker run --rm --name web -d -p 8080:80 web
+docker run --rm --name web -d -p 8080:80 --env-file ./env.txt web
